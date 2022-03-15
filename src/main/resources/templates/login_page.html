@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/css/login_page_style.css">
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <main>
+
+        <section id="welcome-message">
+            <h2>Welcome to the login session</h2>
+        </section>
+
+        <section class="main_container">
+            <div class = "inner_container">
+                <form method="post" action="/login" th:object="${loginRequest}">
+                    <div class="login_input_div">
+                        <h3>Enter your username login</h3>
+                        <input type="text" name="login" id="input_login" placeholder="login" required>
+                    </div>
+
+                    <div class="password_input_div">
+                        <h3>Enter your password</h3>
+                        <input type="password" name="password" id="input_password" placeholder="password" required>
+                    </div>
+
+                    <div class = "submit_button">
+                        <input type="submit" name="sign-in" value="login">
+                    </div>
+                    <a href="/register">Navigate to the register</a>
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

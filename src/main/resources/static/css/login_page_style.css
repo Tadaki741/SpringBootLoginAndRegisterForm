@@ -1,0 +1,38 @@
+
+body{
+    background-color: coral;
+}
+
+main section h2{
+    font-family: SansSerif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+}
+
+main .main_container{
+    background-color: #eabf0e;
+    margin: auto;
+    width: 60%;
+    border: 5px solid #4bcbd7;
+    padding: 10px;
+    height: auto;
+}
+
+main .main_container .inner_container{
+    background-color: #f13b3b;
+    margin: auto;
+    width: 40%;
+    border: 5px solid #f8c512;
+    padding: 10px;
+    height: auto;
+}
+
+.submit_button{
+
+    margin: 20px;
+    text-align: center;
+
+}
+

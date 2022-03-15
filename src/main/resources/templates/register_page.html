@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register page</title>
+    <link rel="stylesheet" href="../static/css/login_page_style.css">
+</head>
+<body>
+
+<header>
+
+</header>
+
+<nav>
+
+</nav>
+
+<main>
+
+    <section id="welcome-message">
+        <h2>Welcome to the register session</h2>
+    </section>
+
+    <section class="main_container">
+        <div class="inner_container">
+            <form method="post" action="/register" th:object="${registerRequest}">
+                <div class="login_input_div">
+                    <h3>Enter your username login</h3>
+                    <input id="input_login" name="login" placeholder="login" type="text" required>
+                </div>
+
+                <div class="password_input_div">
+                    <h3>Enter your password</h3>
+                    <input id="input_password" name="password" placeholder="password" type="password" required>
+                </div>
+
+                <div class="email_input_div">
+                    <h3>Enter your email</h3>
+                    <input id="input_email" name="email" placeholder="Email" type="email">
+                </div>
+
+                <div class="submit_button">
+                    <input name="sign-in" type="submit" value="Register">
+                </div>
+                <a href="/">Navigate to the main page</a>
+            </form>
+        </div>
+
+    </section>
+
+
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
