@@ -7,12 +7,14 @@ import java.util.Objects;
 @Table(name = "users_table")
 public class UsersModel {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private String login;
+
     private String password;
+
     private String email;
 
     public Integer getId() {
